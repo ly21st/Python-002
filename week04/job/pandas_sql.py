@@ -29,7 +29,8 @@ df = pd.DataFrame({"A": [5, 3, None, 4],
 data = pd.DataFrame({
     "id": np.random.randint(10, 2000, 10),
     "salary": np.random.randint(5, 50, 10),
-    "age": np.random.randint(15, 50, 10)
+    "age": np.random.randint(15, 50, 10),
+    "order_id": np.random.randint(15, 20, 10)
 })
 
 table1 = pd.DataFrame({
@@ -86,7 +87,7 @@ def select_groupby(df):
     """
     6. SELECT id,COUNT(DISTINCT order_id) FROM table1 GROUP BY id;
     """
-    print(df.groupby('id').agg({'id': 'count'}))
+    print(df.groupby('id')['order_id'].nunique())
 
 
 def select_join(table1, table2, col, how):
@@ -147,3 +148,5 @@ if __name__ == '__main__':
 
     delete_col(table1, 'id')
     print("----------")
+
+
