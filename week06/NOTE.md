@@ -53,3 +53,7 @@ python manage.py shell
 ![2b67f3eafe65e4a3f7ca151f258969ba.png](en-resource://database/6908:0)
 
 ![13fa69b29204c8ba54f63b182861473c.png](en-resource://database/6910:0)
+
+
+
+# 作业未完成，还需完善
