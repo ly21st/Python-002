@@ -35,7 +35,7 @@ class Animal(metaclass=ABCMeta):
 
 
 class Cat(Animal):
-    def __init__(self, name, category, somatotype, nature, cry=''):
+    def __init__(self, name, category, somatotype, nature, cry='miaomiaomiao'):
         super().__init__(category, somatotype, nature, cry)
         self.name = name
         self.set_fierce(category, somatotype, nature)
@@ -49,7 +49,7 @@ class Cat(Animal):
 
 
 class Dog(Animal):
-    def __init__(self, name, category, somatotype, nature, cry=''):
+    def __init__(self, name, category, somatotype, nature, cry='wangwangwang'):
         super().__init__(category, somatotype, nature, cry)
         self.name = name
         self.set_fierce(category, somatotype, nature)
